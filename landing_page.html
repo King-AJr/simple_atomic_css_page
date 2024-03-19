@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Atomic CSS Landing Page</title>
+  <style>
+    /* Custom Atomic CSS */
+    .bg-blue {
+      background-color: #3490dc;
+    }
+    .text-white {
+      color: #fff;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #388e3c;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-blue py-6">
+    <div class="container text-center">
+      <h1 class="text-3xl font-bold text-white">Welcome to Atomic CSS</h1>
+      <p class="mt-4 text-lg text-white">A modular approach to styling your web projects</p>
+      <a href="#about" class="btn mt-6">Learn More</a>
+    </div>
+  </header>
+
+  <section id="about" class="py-12">
+    <div class="container">
+      <h2 class="text-2xl font-bold text-center">About Atomic CSS</h2>
+      <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+        Atomic CSS is a methodology that promotes the use of single-purpose classes for styling elements. By breaking down styles into small, reusable classes, developers can create modular and maintainable CSS code.
+      </p>
+    </div>
+  </section>
+
+  <section id="variations" class="bg-gray-100 py-12">
+    <div class="container">
+      <h2 class="text-2xl font-bold text-center mb-8">Atomic CSS Variations</h2>
+      <div class="text-center">
+        <div class="box bg-blue"></div>
+        <div class="box bg-green-500"></div>
+        <div class="box bg-red-500"></div>
+      </div>
+      <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+        The boxes above showcase variations in color handled by Atomic CSS classes. Instead of creating separate classes for each color variation, Atomic CSS allows us to apply colors directly using single-purpose classes.
+      </p>
+      <div class="text-center mt-8">
+        <div class="box bg-blue w-20 h-20"></div>
+        <div class="box bg-blue w-40 h-40"></div>
+        <div class="box bg-blue w-60 h-60"></div>
+      </div>
+      <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+        Similarly, the boxes above demonstrate variations in size. With Atomic CSS, we can easily adjust the size of elements by applying width and height classes directly, without the need for separate styling rules.
+      </p>
+    </div>
+  </section>
+
+  <footer class="bg-blue py-6">
+    <div class="container text-center">
+      <p class="text-white">&copy; 2024 Atomic CSS Landing Page</p>
+    </div>
+  </footer>
+</body>
+</html>
